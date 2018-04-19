@@ -1,0 +1,268 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+:root {
+    --color1: #0D1B2A;
+    --color2: #1B263B;
+    --color3: #415A77;
+    --color4: #778DA9;
+    --color5: #E0E1DD;
+}
+.current {
+    background-color: var(--color4);
+}
+.wrapper {
+    display:flex;
+    flex-direction:row;
+    height:100vh;
+    font-family: Ubuntu Light, 'sans-serif';
+    background-image: url('images/home-pic.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.nav-section, content-section {
+    padding:1%;
+}
+
+                                /* Nav section */
+.nav-section {
+    background-color: var(--color1);
+    width:7%;
+    height:100vh;
+    list-style-type: none;
+    position: fixed;
+    box-shadow: 9px 1px 30px -4px rgba(0,0,0,0.75);
+}
+
+.nav-section a {
+    margin: 50px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none !important;
+}
+.nav section a:active {
+    color:orange;
+}
+.nav-section li {
+    padding:5px;
+    transition: background-color .5s, border-radius .5s;
+}
+
+.nav-section li:hover {
+    background-color:white;
+    color: var(--color2);
+    border-radius:10px;
+}
+.circle-box {
+    width:50px;
+    border-radius:50%;
+    border:1px solid white;
+    height:50px;
+    margin:300px 17.5%;
+    position: absolute;
+}
+
+.circle{
+        width:6px;
+        height:6px;
+        background:gainsboro;
+        border-radius:50%;
+        border:1px solid white;
+        position:absolute;
+        top:0; bottom:0; left:0;right:0;
+        overflow:hidden;
+        margin:auto;
+        animation: circle 6s linear infinite;
+      }
+
+
+                                /* Content section */
+                                    
+
+.content-section { 
+    width:95%;
+    height:auto;
+    text-align: center;
+    color: var(--color5);
+    font-size: 3rem;
+    padding: 3% !important;
+}
+
+
+                                /* Home */
+.home {
+    height:auto;
+    position: relative;
+}
+
+.home h1 {
+    animation-name: woble;
+    animation-duration: 1s;
+}
+.home h3 {
+    animation-name: subhead;
+    animation-duration: 2s;
+}
+
+.home h1, .home h3 {
+    margin-left:25%;
+ /*   background-color: rgba(43, 43, 43, 0.5); */
+    width:60%;
+    
+}
+
+                                /* Work Section */
+.work {
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    margin-left: 10%;
+    align-content:center;
+    justify-content: center;
+    margin-top:0;
+}
+.project {
+    display:flex;
+    flex-direction:column;
+    background: rgba(13, 27, 42, 0.5);
+    margin:auto 2%;
+    
+}
+.project h3 {
+    font-size:2rem;
+}
+.project a {
+    font-size:1.4rem;
+    color: var(--color5);
+    text-decoration: none;
+}
+.project-img {
+    width:90%;
+    margin:5px 5%;
+}
+.project .tech img {
+    margin:5px !important;
+
+}
+
+.tech {
+    display:flex;
+    flex-direction:row;
+}
+                                                /*About*/
+.about {
+    display:flex;
+    flex-direction: row;
+    align-content:center;
+    justify-content:center;
+    font-size:1rem;
+}
+.about p {
+    font-size:1rem;
+    width:100%;
+    animation-name:head;
+    animation-duration:1s;
+    overflow: hidden;
+}
+.about .bio {
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    width:40%;
+    margin-left:2%;
+    padding:2%;
+    border-radius:20px;
+    background-color:rgba(13, 27, 42, 0.45);
+}
+.about img {
+    max-width:250px;
+    max-height:300px;
+}
+.about-me {
+    text-align: left;
+}
+.about li {
+    display:inline;
+}
+
+                                                /*Contact*/
+.contact {
+    display:flex;
+    flex-direction:column;
+    margin-left:10%;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact form {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:30%;
+    animation-name: subhead;
+    animation-duration: 1s;
+}
+.contact h1 {
+    animation-name:subhead-reverse;
+    animation-duration:1s;
+}
+.contact #name-field, .contact #mail-field, .contact #message-field {
+    margin:2% auto;
+    font-family: Ubuntu Regular, 'sans-serif';
+
+}
+.contact #name-field {
+    width:70%;
+}
+.contact #mail-field {
+    width:70%;
+}
+.contact #message-field {
+    height:150px;
+    width:100%;
+}
+.contact button {
+    background-color:orange;
+    border-radius:5px;
+}
+                              
+                                               /*Animations*/
+@keyframes head {
+    from{transform:translateX(200px);}
+    to{transform:translateX(0px);}
+}
+@keyframes subhead {
+    from{transform:translateY(140px);}
+    to{transform:translateY(0px)}
+}
+@keyframes subhead-reverse {
+    from{transform:translateY(-140px);}
+    to{transform:translateY(0px)}
+}
+@keyframes fadeIn {
+    from{opacity:0%;}
+    to{opacity:100%}
+}
+@keyframes woble {
+    0% {transform:translateX(200px);}
+    50% {transform:translateX(-80px);}
+    100% {transform:translateX(0px);}
+}
+@keyframes circle{
+    0%{
+      transform:rotate(0deg)
+                translateX(-25px)
+                rotate(0deg);
+    
+    }
+    100%{
+      transform:rotate(360deg)
+                translateX(-25px)
+                rotate(-360deg);
+    }
+  }
+  
