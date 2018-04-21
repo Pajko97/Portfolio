@@ -176,11 +176,14 @@ html, body {
     margin-left:2%;
     padding:2%;
     border-radius:20px;
-    background-color:rgba(13, 27, 42, 0.45);
+    background-color:rgba(13, 27, 42, 0.90);
 }
 .about img {
     max-width:250px;
     max-height:300px;
+}
+.tech-list i {
+    padding:1%;
 }
             /* Icons */
 .html {
@@ -189,8 +192,9 @@ html, body {
 .css {
     background-color:#1B73BA;
 }
-.js {
-    background-color:yellow;
+.icon-javascript {
+    width:48px !important;
+    height:48px !important;
 }
 .jquery {
     background-color:#045FA6;
