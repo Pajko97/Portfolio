@@ -182,6 +182,25 @@ html, body {
     max-width:250px;
     max-height:300px;
 }
+            /* Icons */
+.html {
+    background-color:#E44D26;
+}
+.css {
+    background-color:#1B73BA;
+}
+.js {
+    background-color:yellow;
+}
+.jquery {
+    background-color:#045FA6;
+}
+.bootstrap {
+    background-color:#583B7E;
+}
+.git {
+    background-color:#F15034;
+}
 .about-me {
     text-align: left;
 }
@@ -257,6 +276,7 @@ html, body {
       transform:rotate(0deg)
                 translateX(-25px)
                 rotate(0deg);
+                
     
     }
     100%{
