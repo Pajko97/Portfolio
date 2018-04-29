@@ -136,10 +136,12 @@ html, body {
     flex-direction:column;
     background: rgba(13, 27, 42, 0.5);
     margin:auto 2%;
+    width:250px;
     
 }
 .project h3 {
     font-size:2rem;
+    margin:auto 10%;
 }
 .project a {
     font-size:1.4rem;
@@ -160,6 +162,11 @@ html, body {
     flex-direction:row;
     margin:2% 15%;
     padding:auto 2%;
+}
+.tech i {
+    margin:auto 1%;
+    padding:2%;
+
 }
                                                 /*About*/
 .about {
