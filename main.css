@@ -182,29 +182,10 @@ html, body {
     max-width:250px;
     max-height:300px;
 }
-.tech-list i {
-    padding:1%;
+.about i {
+    padding:0.2rem;
 }
-            /* Icons */
-.html {
-    background-color:#E44D26;
-}
-.css {
-    background-color:#1B73BA;
-}
-.icon-javascript {
-    width:48px !important;
-    height:48px !important;
-}
-.jquery {
-    background-color:#045FA6;
-}
-.bootstrap {
-    background-color:#583B7E;
-}
-.git {
-    background-color:#F15034;
-}
+
 .about-me {
     text-align: left;
 }
