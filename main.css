@@ -127,6 +127,11 @@ html, body {
     color: var(--color5);
     text-decoration: none;
 }
+.project a:hover {
+    color:var(--color1);
+    transition:background-color 0.45s ease;
+    background-color:var(--color5);
+}
 .project-img {
     width:90%;
     margin:5px 5%;
@@ -140,14 +145,17 @@ html, body {
     display:flex;
     flex-direction:row;
     margin:2% 15%;
-    padding:auto;
+    padding:0px;
+    border:1px solid white;
+    align-content:center;
+    justify-content: center;
 }
 .tech i {
     margin:auto 1%;
     padding:2%;
-
 }
-                                                /*About*/
+
+                        /*About*/
 .about {
     display:flex;
     flex-direction: row;
