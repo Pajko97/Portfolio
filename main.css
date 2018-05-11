@@ -12,6 +12,7 @@ html, body {
 .current {
     background-color: var(--color4);
 }
+
 .wrapper {
     display:flex;
     flex-direction:row;
@@ -22,6 +23,7 @@ html, body {
     background-size: cover;
     background-repeat: none;
 }
+                                /* Video */
 
 .nav-section, content-section {
     padding:1%;
@@ -82,8 +84,8 @@ html, body {
     animation-duration: 1s;
 }
 .home h3 {
-    animation-name: subhead;
-    animation-duration: 2s;
+    animation-name: reverseWoble;
+    animation-duration: 1s;
 }
 
 .home h1, .home h3 {
@@ -254,6 +256,11 @@ html, body {
 @keyframes fadeIn {
     from{opacity:0%;}
     to{opacity:100%}
+}
+@keyframes reverseWoble {
+    0% {transform:translateX(-200px);}
+    50%{transform:translateX(80px);}
+    100%{transform:translateX(0px)}
 }
 @keyframes woble {
     0% {transform:translateX(200px);}
