@@ -18,7 +18,7 @@ html, body {
     flex-direction:row;
     height:100vh;
     font-family: Ubuntu Light, 'sans-serif';
-    background-image: url('images/home-pic.jpeg');
+    background-image: url('images/home-picc.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -57,6 +57,12 @@ html, body {
     background-color:white;
     color: var(--color2);
     border-radius:10px;
+}
+
+.git {
+    padding:10px;
+    margin-top:50vh;
+    
 }
 
 
