@@ -228,6 +228,7 @@ html, body {
     padding:2%;
 }
 
+
                         /*About*/
 .about {
     display:-webkit-box;
@@ -283,9 +284,19 @@ html, body {
 .about-me {
     text-align: left;
 }
-.about ul {
-    margin:0;
-    padding:0;
+
+
+.tech-list {
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    padding:1rem;
+    
+}
+.tech-list i {
+    padding: 0.5rem;
+    
 }
 
                                                 /*Contact*/
