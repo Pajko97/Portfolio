@@ -91,7 +91,6 @@ html, body {
 
 .nav-section li:hover {
     background-color:white;
-    color: var(--color2);
     border-radius:10px;
 }
 
