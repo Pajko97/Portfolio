@@ -33,10 +33,8 @@ html, body {
     --color4: #778DA9;
     --color5: #E0E1DD;
 }
-.current {
-    background-color: var(--color4);
-    border-radius:10px;
-    color:var(--color1);
+.current{
+    background-color:red;
 }
 
 .wrapper {
@@ -84,6 +82,7 @@ html, body {
 
 .nav-section li {
     padding:5px;
+    margin:auto 20px;
     -webkit-transition: background-color .5s, border-radius .5s;
     -o-transition: background-color .5s, border-radius .5s;
     transition: background-color .5s, border-radius .5s;
@@ -91,34 +90,20 @@ html, body {
 
 .nav-section li:hover {
     background-color:white;
+    color:var(--color1);
     border-radius:10px;
+    
 }
 
 .git {
     padding:10px;
-    margin-top:50vh;
+    background-color:white;
+    border-radius:20%;
+    border:1px solid black;
+    align-self:center;
     
 }
-#work-btn {
-    border-right:10px solid red;
 
-}
-#work-btn:hover {
-    background-color:red;
-    color:white;
-}
-#home-btn{
-    border-right:10px solid yellow;
-}
-#home-btn:hover{
-    background-color:yellow;
-}
-#about-btn{
-    border-right:10px solid palegreen;
-}
-#about-btn:hover {
-    background-color:palegreen;
-}
 
                                 /* Content section */
                                     
@@ -160,6 +145,15 @@ html, body {
     width:60%;
     
 }
+.find-me {
+    display:flex;
+    align-content:center;
+    margin-left:6%;
+    justify-content: center;
+}
+.find-me a {
+    padding:20px;
+}
 
                                 /* Work Section */
 .work {
@@ -177,7 +171,7 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top:0;
+    margin-top:10%;
 }
 .open-project {
     padding:3px 6px;
@@ -195,13 +189,17 @@ html, body {
     -webkit-box-direction:normal;
         -ms-flex-direction:column;
             flex-direction:column;
-    background: rgba(13, 27, 42, 0.5);
+    background:var(--color1);
     margin:auto 2%;
     width:250px;
     border: 1px solid white;
     border-radius:10%;
     padding:1%;
     
+}
+#big {
+    scale:1.3;
+    transition: scale .5s ease;
 }
 .project h3 {
     font-size:2rem;
@@ -238,7 +236,7 @@ html, body {
             flex-direction:row;
     margin:2% 15%;
     padding:0px;
-    border:1px solid white;
+    animation: subhead 1s;
     -ms-flex-line-pack:center;
         align-content:center;
     -webkit-box-pack: center;
@@ -350,7 +348,7 @@ html, body {
     -webkit-box-align:center;
         -ms-flex-align:center;
             align-items:center;
-    width:30%;
+    width:400px;
     -webkit-animation-name: subhead;
             animation-name: subhead;
     -webkit-animation-duration: 1s;
@@ -364,26 +362,33 @@ html, body {
             font-weight: 200;
 }
 .contact #name-field, .contact #mail-field, .contact #message-field {
-    margin:2% auto;
+    margin:3% auto;
     font-family: Ubuntu Regular, 'sans-serif';
 
 }
 .contact #name-field {
     width:70%;
-    padding:3px 10px;
+    padding:10px 20px;
+    border-radius:10px;
+    border:0;
 }
 .contact #mail-field {
     width:70%;
-    padding:3px 10px;
+    padding:10px 20px;
+    border-radius:10px;
+    border:0;
 }
 .contact #message-field {
     height:150px;
-    width:100%;
+    width:90%;
     padding:10px 10px;
+    border-radius:10px;
 }
 .contact button {
-    background-color:gainsboro;
+    background-color:red;
+    color: white;
     padding:8px 16px;
+    border-radius:10px;
     border:none;
 }
                               
