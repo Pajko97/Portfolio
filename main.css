@@ -47,7 +47,6 @@ html, body {
             flex-direction:row;
     background-color: #0C1B20;
     height:100vh;
-    color:black!important;
     font-family: Ubuntu Light, 'sans-serif';
 /*     background-image: url('images/home-picc.jpeg');
  */    background-position: center;
@@ -57,7 +56,7 @@ html, body {
 
 .content-section {
     padding:1%;
-    background-color:white;
+    background-color:var(--color5);
 }
 
                                 /* Nav section */
@@ -68,9 +67,7 @@ html, body {
 
     list-style-type: none;
     position: fixed;
-    -webkit-box-shadow: 9px 1px 30px -4px rgba(0,0,0,0.75);
-            box-shadow: 9px 1px 30px -4px rgba(0,0,0,0.75);
-}
+    }
 
 .nav-section a {
     margin: 50px 20px;
@@ -125,6 +122,7 @@ html, body {
 .home {
     height:auto;
     position: relative;
+    color:black;
 }
 
 .home h1 {
@@ -271,6 +269,7 @@ html, body {
         -ms-flex-pack:center;
             justify-content:center;
     font-size:1rem;
+    color:black;
 }
 .about p {
     font-size:1rem;
@@ -294,15 +293,22 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            background-color:var(--color2);
+            color:var(--color5);
     width:40%;
     margin-left:2%;
     padding:2%;
     border-radius:20px;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
+
     
 }
 .about img {
     max-width:250px;
     max-height:300px;
+    box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
+    border-radius:20px;
+    background-color:var(--color2);
 }
 .about i {
     padding:0.22rem;
@@ -342,6 +348,7 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            color:black;
 
 }
 .contact form {
@@ -371,25 +378,33 @@ html, body {
 .contact #name-field, .contact #mail-field, .contact #message-field {
     margin:3% auto;
     font-family: Ubuntu Regular, 'sans-serif';
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
 
 }
 .contact #name-field {
     width:70%;
     padding:10px 20px;
     border-radius:10px;
-    border:0;
+    border:1px solid var(--color3);
+
 }
 .contact #mail-field {
     width:70%;
     padding:10px 20px;
     border-radius:10px;
     border:0;
+    border:1px solid var(--color3);
+
 }
 .contact #message-field {
     height:150px;
     width:90%;
     padding:10px 10px;
     border-radius:10px;
+    border:1px solid var(--color3);
+
 }
 .contact button {
     background-color:red;

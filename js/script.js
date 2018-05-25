@@ -31,9 +31,7 @@ $(document).ready( function() {
         return false;
     });
 
-    $(".tech").each(function(index) {
-    $(this).delay(400*index).fadeIn(1000);
-}); 
+    
 });
 
 
