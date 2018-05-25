@@ -47,6 +47,7 @@ html, body {
             flex-direction:row;
     background-color: #0C1B20;
     height:100vh;
+    color:black!important;
     font-family: Ubuntu Light, 'sans-serif';
 /*     background-image: url('images/home-picc.jpeg');
  */    background-position: center;
@@ -56,6 +57,7 @@ html, body {
 
 .content-section {
     padding:1%;
+    background-color:white;
 }
 
                                 /* Nav section */
@@ -251,6 +253,7 @@ html, body {
 .software {
     margin:1% 2%;
 }
+
 
 
                         /*About*/
