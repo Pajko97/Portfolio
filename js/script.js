@@ -10,7 +10,7 @@ $(document).ready( function() {
     $('#work-btn').click(function() {
         $('li').removeClass('current');
         $('#work-btn').addClass('current');
-        $("#content").hide().load('/includes/work.html').fadeIn('slow');
+        $("#content").hide().load('/includes/work.html').fadeIn('fast');
 
         return false;
     });
@@ -18,7 +18,7 @@ $(document).ready( function() {
     $('#about-btn').click(function() {
         $('li').removeClass('current');
         $('#about-btn').addClass('current');
-        $("#content").hide().load('/includes/about.html').fadeIn('slow');
+        $("#content").hide().load('/includes/about.html').fadeIn('fast');
 
         return false;
     });
@@ -26,7 +26,7 @@ $(document).ready( function() {
     $('#contact-btn').click(function() {
         $('li').removeClass('current');
         $('#contact-btn').addClass('current');
-        $("#content").hide().load('/includes/contact.html').fadeIn('slow');
+        $("#content").hide().load('/includes/contact.html').fadeIn('fast');
 
         return false;
     });
