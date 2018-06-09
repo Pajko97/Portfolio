@@ -45,6 +45,11 @@ html, body {
     background-color:red;
     opacity:1;
 }
+.home .work .contact .about {
+    background-repeat: none;
+    background-position: center;
+    background-size:cover;
+}
 
 .wrapper {
     display:-webkit-box;
@@ -64,7 +69,6 @@ html, body {
 }
 
 .content-section {
-    padding:1%;
     background-color:white;
 }
 
@@ -121,15 +125,20 @@ html, body {
     text-align: center;
     color: var(--color5);
     font-size: 3rem;
-    padding: 3% !important;
 }
 
 
                                 /* Home */
 .home {
-    height:auto;
-    position: relative;
-    color:black;
+    height:100vh;
+    margin-top:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:var(--color1);
+    background-image: url(/images/background.jpg);
+    background-position:center;
+    background-repeat: none;
 }
 
 .home h1 {
@@ -138,6 +147,8 @@ html, body {
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
     font-weight: 200;
+    margin-top:0;
+    margin-left:0 !important;
 }
 .home h3 {
     -webkit-animation-name: reverseWoble;
@@ -147,16 +158,18 @@ html, body {
     font-weight: 200;
 }
 
-.home h1, .home h3 {
-    margin-left:25%;
+.home h1{
+    padding-top:8%;
  /*   background-color: rgba(43, 43, 43, 0.5); */
     width:60%;
     
 }
+.home h3 {
+    margin-top:0;
+}
 .find-me {
     display:flex;
     align-content:center;
-    margin-left:6%;
     justify-content: center;
 }
 .find-me a {
@@ -165,7 +178,7 @@ html, body {
 
                                 /* Work Section */
 .work {
-    height:auto;
+    height:100vh;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -173,13 +186,15 @@ html, body {
     -webkit-box-direction:normal;
         -ms-flex-direction:row;
             flex-direction:row;
-    margin-left: 10%;
     -ms-flex-line-pack:center;
         align-content:center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top:10%;
+    background-image: url(/images/work.jpg);
+    background-size:cover;
+    background-position: center;
+
 }
 .open-project {
     padding:4px 6px;
@@ -207,6 +222,8 @@ html, body {
     border-radius:10%;
     padding:1%;
     color:var(--color1);
+    background-color:white;
+    border:1px solid black;
     
 }
 
@@ -273,6 +290,7 @@ html, body {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+    height:100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -282,6 +300,8 @@ html, body {
     -webkit-box-pack:center;
         -ms-flex-pack:center;
             justify-content:center;
+    background-image: url(/images/background.jpg);
+    background-position: center;
     font-size:1rem;
     color:black;
 }
@@ -311,6 +331,8 @@ html, body {
             color:var(--color5);
     width:40%;
     margin-left:2%;
+    margin-top:2%;
+    height:80%;
     padding:2%;
     border-radius:20px;
     box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
@@ -323,6 +345,9 @@ html, body {
     box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
     border-radius:20px;
     background-color:var(--color2);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+
 }
 .about i {
     padding:0.22rem;
@@ -355,14 +380,18 @@ html, body {
     -webkit-box-direction:normal;
         -ms-flex-direction:column;
             flex-direction:column;
-    margin-left:10%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-            color:black;
+            height:100vh;           
+            color: gainsboro; 
+            background-image: url(/images/contact.jpeg);
+            background-position: center;
+            background-size:fill;
+
 
 }
 .contact form {
