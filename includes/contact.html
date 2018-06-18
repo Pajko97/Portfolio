@@ -1,9 +1,25 @@
 <div class="contact">
     <h1>Say hello</h1>
-    <form>
+    <form onsubmit=sendform()>
         <input type="text" placeholder="Your name" id="name-field">
         <input type="text" placeholder="Your email" id="mail-field">
         <textarea placeholder="Your message :)" id="message-field"></textarea>
-        <button>Submit</button>
+        <button id="submit-form">Submit</button>
     </form>
 </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="./js/script.js">
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCinEYD4VoLNLJpqnO3HcbU_rPTczL9ZPY",
+        authDomain: "portfolio-c68df.firebaseapp.com",
+        databaseURL: "https://portfolio-c68df.firebaseio.com",
+        projectId: "portfolio-c68df",
+        storageBucket: "portfolio-c68df.appspot.com",
+        messagingSenderId: "607710327979"
+      };
+      firebase.initializeApp(config);
+
+
+    </script>

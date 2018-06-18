@@ -33,5 +33,19 @@ $(document).ready( function() {
 
     
 });
+// Form data send
+var mail = document.getElementById('mail-field');
+var name = document.getElementById('name-field');
+var message = document.getElementById('message-field');
+const submitBtn = document.getElementById('submit-form');
 
+document.getElementById('#submit-form').addEventListener('click', sendForm)
+function sendForm(name, email, message) {
+    firebase.database().ref('users/' + name.target.value).set({
+      username: name.target.value,
+      email: mail.target.value,
+      message : message.target.value
+    });
+    console.log(this);
+  }
 

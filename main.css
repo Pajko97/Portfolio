@@ -1,31 +1,154 @@
-@media screen and (max-width:992px) {
+@media screen and (max-width:1100px) {
+
     
     .nav-section {
         width:100% !important;
-        height:10vh !important;
-        display: flex;
-        flex-direction: row;
-        align-self: center;
+        height:8vh !important;
+        max-height:10vh !important;
+        display: flex !important;
+        flex-direction: row !important; 
+        align-items:center !important;
+        justify-content: center !important;
+        position: fixed !important;
+        border-bottom: 1px solid white;
+
+    }
+
+    .content-section {
+        width:70%;
+        flex-direction:column;
+        height:90% !important;
+    }
+
+    .home {
+        height:100vh !important;
+        margin:0 !important;
+        width:100vw !important;
+        font-size:0.8rem;
+        align-items: center;
         justify-content: center;
     }
-
-    .git {
-        display: none;
+    .home h1 {
+/*         margin-top:35vh !important;
+ */}
+    
+    .nav-section a {
+        padding-top: 10px!important;
+        margin-top:35px!important;
+        margin-left:3px!important;
+        margin-right: 3px !important;
     }
 
-    .nav-section a {
-        padding-top: 0;
-        margin-top:0;
+    .nav-section li {
+        margin-top:2px !important;
+        font-size:16px;
+        align-self:center !important;
+        padding:4px 6px !important;
+        margin:auto 1px !important;
     }
 
     .wrapper {
         display:flex !important;
         flex-direction:column !important;
-        margin:0;
+        margin:0 !important;
         font-size: 16px;
     }
+    /* Work */
 
+    .work {
+        flex-direction: column !important;
+        width: 100vw !important;
+        height:auto!important;
+        padding:5% auto;
+    }
+    .project {
+        padding:20px !important;
+        width:50%;
+        align-self:center;
+        margin:10px 0.5rem !important;
+        height:100% !important;
+        margin-top: 150px !important;
+    }
+    .project h3 {
+        font-size: 1rem !important;
+    }
+    .project img {
+        align-self: center;
+        height:150px;
+        width:200px;
+    }
+    .open-project  {
+        margin:0px !important;
+        width:50%;
+        align-self:center;
+        padding:10px 5px;
+    }
+    /* About */
+
+    .about {
+        display:flex !important;
+        flex-direction:column !important;
+        width:100vw;
+        height: auto !important;
+    }
+    .about .me {
+        align-self: center;
+        margin-top:20%;
+
+    }
+    .bio {
+        width:90vw !important;
+        align-self: center !important;
+        padding:20px 0px !important;
+        height:100% !important;
+        margin-bottom:5%;
+        font-size:16px !important;
+    }
+    .bio h3 {
+        width:80%;
+        align-self: center;
+    }
+    .tech-list i {
+        font-size:2em !important;
+        padding: 5px !important;
+    }
+    .tech-list .software {
+        width:36px !important;
+        height:36px !important;
+    }
+    .about-me {
+        text-align: center!important;
+        padding:0;
+        flex-wrap: wrap;
+        width:80% !important;
+        align-self:center;
+    }
+    /* Contact */
+
+    .contact {
+        display:flex;
+        height:100vh;
+        width:100vw !important;
+
+    }
+    .contact form {
+        width:70vw !important;
+    }
+    .name-field, .mail-field {
+        width:30% !important;
+        margin:auto 0!important;
+    }
+    .contact h1 {
+        font-size:3rem;
+    }
 }
+
+@media screen and (min-width: 50em) {
+    html {
+      font-size: 2vw;
+    }
+  }
+
 html, body {
     margin:0;
     padding:0;
@@ -41,6 +164,9 @@ html, body {
     --color4: #778DA9;
     --color5: #E0E1DD;
 }
+
+html { font-size: calc(1em + 0.1vw); }
+
 .current{
     background-color:red;
     opacity:1;
@@ -429,6 +555,7 @@ html, body {
 box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
 
 }
+
 .contact #name-field {
     width:70%;
     padding:10px 20px;
@@ -436,6 +563,7 @@ box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
     border:1px solid var(--color3);
 
 }
+
 .contact #mail-field {
     width:70%;
     padding:10px 20px;
@@ -444,6 +572,7 @@ box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
     border:1px solid var(--color3);
 
 }
+
 .contact #message-field {
     height:150px;
     width:90%;
@@ -452,6 +581,7 @@ box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.35);
     border:1px solid var(--color3);
 
 }
+
 .contact button {
     background-color:red;
     color: white;
