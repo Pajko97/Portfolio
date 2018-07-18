@@ -313,6 +313,7 @@ html { font-size: calc(1em + 0.1vw); }
     display:-ms-flexbox;
     display:flex;
     flex-wrap: wrap;
+    background-color:white;
     flex-basis: 1;
     -webkit-box-orient:horizontal;
     -webkit-box-direction:normal;
