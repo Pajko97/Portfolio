@@ -59,7 +59,7 @@
     .project .tech img{margin:5px!important}
     .tech{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:2% 15%;padding:0;-webkit-animation:subhead 1s;animation:subhead 1s;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
     .tech i{margin:auto 1%;padding:2%}
-    .software{margin:1% 2%}
+    .software{/* margin:1% 2% */}
     .about{display:-webkit-box;display:-ms-flexbox;display:flex;height:100vh;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:url(/images/background.jpeg);background-position:center;font-size:1rem;color:#000}
     .about p{font-size:1rem;width:100%;-webkit-animation-name:head;animation-name:head;-webkit-animation-duration:1s;animation-duration:1s;overflow:hidden}
     .about .bio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color2);color:var(--color5);width:40%;margin-left:2%;margin-top:2%;height:80%;padding:2%;border-radius:20px;-webkit-box-shadow:0 0 6px 3px rgba(0,0,0,0.35);box-shadow:0 0 6px 3px rgba(0,0,0,0.35)}
@@ -86,3 +86,36 @@
     from{opacity:0}
     to{opacity:100%}
     }
+
+    .hidden {
+        display:none;
+        position:absolute;
+        color:gainsboro;
+        background-color:#0D1B2A;
+        width:275px;
+        border-radius:10px;
+        text-align:left;
+        height:200px;
+        margin-left:0;
+        margin-bottom:100px;
+        height:250px;
+        font-size:0.3em;
+        transition: 1s ease-in linear;
+    }
+    .description {
+        margin:10px 10px;
+    }
+    .description-header {
+        font-size:1em;
+        margin: 10px 10px;
+    }
+    .project-tech {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .project-tech i, .project-tech img {
+        padding:5px;
+    }
+    
+   
