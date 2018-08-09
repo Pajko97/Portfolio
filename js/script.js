@@ -30,16 +30,14 @@ $(document).ready( function() {
 
         return false;
     });
-    $('.project').hover(function(e){
+    $('.project').click(function(e){
         var ovo ='#' + $(this).attr("id");
 
         console.log(ovo)
 
       $(ovo + ' .hidden').fadeToggle('slow');
-        return false;
     })
     
 });
-// Form data send
 
 

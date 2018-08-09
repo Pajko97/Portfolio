@@ -3,6 +3,16 @@
     .content-section{width:70%;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;height:90%!important}
     .home{height:100vh!important;margin:0!important;width:100vw!important;font-size:.8rem;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
     .nav-section a{padding-top:10px!important;margin-top:35px!important;margin-left:3px!important;margin-right:3px!important}
+    .follow {
+        display:none !important;
+    }
+    .follow-mobile  {
+        display:flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: auto 2% !important;
+    }
+    
     .nav-section li{font-size:16px;-ms-flex-item-align:center!important;-ms-grid-row-align:center!important;align-self:center!important;padding:4px 6px!important;margin:auto 1px!important}
     .wrapper{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;margin:0!important;font:16px Roboto,sans-serif}
     .work{-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;width:100vw!important;height:auto!important;padding:5% auto}
@@ -11,17 +21,18 @@
     .project img{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;height:150px;width:200px}
     .open-project{margin:0!important;width:50%;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;padding:10px 5px}
     .about{display:-webkit-box!important;display:-ms-flexbox!important;display:flex!important;-webkit-box-orient:vertical!important;-webkit-box-direction:normal!important;-ms-flex-direction:column!important;flex-direction:column!important;width:100vw;height:auto!important}
-    .about .me{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;margin-top:20%}
-    .bio{width:90vw!important;-ms-flex-item-align:center!important;-ms-grid-row-align:center!important;align-self:center!important;padding:20px 0!important;height:100%!important;margin-bottom:5%;font-size:16px!important}
-    .bio h3{width:80%;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
-    .tech-list i{font-size:2em!important;padding:5px!important}
-    .tech-list .software{width:36px!important;height:36px!important}
+    .about .me{-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;margin-top:20%;}
+    .bio{width:90vw!important;-ms-flex-item-align:center!important;-ms-grid-row-align:center!important;align-self:center!important;padding:20px 0!important;height:100%!important;margin-bottom:1%;font-size:16px!important;}
+    .bio h3{width:80%;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center;}
+    .tech-list{font-size:1em!important;padding:5px!important}
+/*     .softwaree {margin:auto 1% !important;}
+ */    .tech-list .software{width:36px!important;height:36px!important}
     .about-me{text-align:center!important;padding:0;-ms-flex-wrap:wrap;flex-wrap:wrap;width:80%!important;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
     .contact{display:-webkit-box;display:-ms-flexbox;display:flex;height:100vh;width:100vw!important}
     .contact form{width:70vw!important}
     .name-field,.mail-field{width:30%!important;margin:auto 0!important}
-    .contact h1{font-size:3rem}
-    }
+    .header{font-size:2rem!important;width:300px;}
+}
     @media screen and (min-width: 50em) {
     html{font-size:2vw}
     }
@@ -31,16 +42,19 @@
     html{font-size:calc(1em + 0.1vw)}
     .current{background-color:red;opacity:1}
     .home .work .contact .about{background-repeat:none;background-position:center;background-size:cover}
-    .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-color:#0C1B20;height:100vh;font-family:Ubuntu Light,'sans-serif';background-position:center;background-size:cover;background-repeat:none}
+    .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-color:#0C1B20;height:100vh;font-family:PT sans,'sans-serif';background-position:center;background-size:cover;background-repeat:none}
     .content-section{background-color:#fff}
     .nav-section{background-color:var(--color1);width:9%;height:100vh;list-style-type:none}
     .nav-section a{margin:50px 20px;text-align:center;color:#fff;text-decoration:none!important}
     .nav section a:active{color:orange}
+    .follow-mobile {display: none;}
+
     .nav-section li{padding:5px;margin:auto 20px;-webkit-transition:background-color .5s,border-radius .5s;-o-transition:background-color .5s,border-radius .5s;transition:background-color .5s,border-radius .5s}
     .nav-section li:hover{background-color:#fff;color:var(--color1);border-radius:10px}
+    
     .git{padding:10px;border-radius:20%;-ms-flex-item-align:center;-ms-grid-row-align:center;align-self:center}
     .content-section{width:95%;height:auto;text-align:center;color:var(--color5);font-size:3rem}
-    .home{height:100vh;margin-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--color1);background-image:url(/images/background.jpeg);background-position:center;background-repeat:none}
+    .home{height:100vh;margin-top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:var(--color1);background-position:center;background-repeat:none}
     .home h1{-webkit-animation-name:woble;animation-name:woble;-webkit-animation-duration:1s;animation-duration:1s;font-weight:200;margin-top:0;margin-left:0!important}
     .home h3{-webkit-animation-name:reverseWoble;animation-name:reverseWoble;-webkit-animation-duration:1s;animation-duration:1s;font-weight:200}
     .home h1{padding-top:8%;width:60%}
@@ -59,15 +73,17 @@
     .project .tech img{margin:5px!important}
     .tech{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin:2% 15%;padding:0;-webkit-animation:subhead 1s;animation:subhead 1s;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
     .tech i{margin:auto 1%;padding:2%}
-    .software{/* margin:1% 2% */}
+    .softwaree{ margin:1em 1em;}
+    .software{ margin:1em 1em;}
+
     .about{display:-webkit-box;display:-ms-flexbox;display:flex;height:100vh;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-image:url(/images/background.jpeg);background-position:center;font-size:1rem;color:#000}
-    .about p{font-size:1rem;width:100%;-webkit-animation-name:head;animation-name:head;-webkit-animation-duration:1s;animation-duration:1s;overflow:hidden}
-    .about .bio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color2);color:var(--color5);width:40%;margin-left:2%;margin-top:2%;height:80%;padding:2%;border-radius:20px;-webkit-box-shadow:0 0 6px 3px rgba(0,0,0,0.35);box-shadow:0 0 6px 3px rgba(0,0,0,0.35)}
+    .about p{font-size:1rem;width:100%;-webkit-animation-name:head;animation-name:head;-webkit-animation-duration:1s;animation-duration:1s;}
+    .about .bio{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-line-pack:center;align-content:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:var(--color2);color:var(--color5);width:40%;margin-left:2%;margin-top:2%;height:85%;padding:2%;border-radius:20px;-webkit-box-shadow:0 0 6px 3px rgba(0,0,0,0.35);box-shadow:0 0 6px 3px rgba(0,0,0,0.35)}
     .about .me{max-width:250px;max-height:300px;-webkit-box-shadow:0 0 6px 3px rgba(0,0,0,0.35);box-shadow:0 0 6px 3px rgba(0,0,0,0.35);border-radius:20px;background-color:var(--color2);border-top-right-radius:0;border-top-left-radius:0}
     .about i{padding:.22rem}
     .about-me{text-align:left}
     .tech-list{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:1rem}
-    .tech-list i{padding:.5rem}
+    .tech-list i{padding:.2rem}
     .contact{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;height:100vh;color:#dcdcdc;background-image:url(/images/contact.jpeg);background-position:center;background-size:fill}
     .contact form{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:400px;-webkit-animation-name:subhead;animation-name:subhead;-webkit-animation-duration:1s;animation-duration:1s}
     .contact h1{-webkit-animation-name:subhead-reverse;animation-name:subhead-reverse;-webkit-animation-duration:1s;animation-duration:1s;font-weight:200}
@@ -86,7 +102,14 @@
     from{opacity:0}
     to{opacity:100%}
     }
-
+    .follow {
+        display:flex;
+        flex-direction:column;
+        margin-top:15em;
+    }
+    .follow a {
+        margin:1em auto;
+    }
     .hidden {
         display:none;
         position:absolute;
@@ -101,6 +124,10 @@
         height:250px;
         font-size:0.3em;
         transition: 1s ease-in linear;
+    }
+    .header {
+        font-size:2rem;
+        width:50%;
     }
     .description {
         margin:10px 10px;
@@ -118,4 +145,3 @@
         padding:5px;
     }
     
-   
