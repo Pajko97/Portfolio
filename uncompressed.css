@@ -296,7 +296,9 @@ html { font-size: calc(1em + 0.1vw); }
 
                                 /* Content section */
                                     
-
+                                .home {
+                                    color:green;
+                                }
 .content-section { 
     width:95%;
     height:auto;
