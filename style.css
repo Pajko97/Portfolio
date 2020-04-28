@@ -1,0 +1,203 @@
+/* Landing */
+body {
+    background-color: #E67459;
+    margin:0;
+    height:100vh;
+}
+.wrapper {
+    margin:0;
+    height:100vh;
+}
+.nav {
+    height:9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+}
+.nav-link-active {
+    background-color: white;
+    color:#374140!important;
+}
+svg {
+    color: red;
+}
+.nav a {
+    font-family: Hack;
+    border:1px solid orange;
+    text-decoration: none;
+    border-radius:5%;
+    padding:20px 30px;
+    margin:auto 40px;
+    color: white;
+}
+
+.nav a:hover {
+    color: #374140;
+    transition: 0.21s ease-out;
+    background-color:white;
+    border:none;
+}
+.landing .content {
+    font-family: Hack;
+    height:82vh;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.social {
+    background-color:rgba(255,255,255,0.8);
+    width:20vw;
+    min-height:47px;
+    min-width:355px;
+    position:fixed;
+    left:0;
+    bottom:0;
+    border-top-right-radius: 70%;
+}
+.social img {
+    margin:0 20px;
+    padding:15px;
+}
+.social h1 {
+    margin:0;
+}
+.landing .content h1 {
+    font-size:4rem;
+    color: rgb(211, 209, 209);
+}
+
+.landing .content h2 {
+    font-size:2.5rem;
+    margin-top:-40px;
+    color: #374140;
+}
+.footer {
+    height:3vh;
+}
+.visibly {
+    display:flex!important;
+}
+/* About */
+.link-about:active {
+    background-color: white;
+}
+.content-about p {
+    color: #374140;
+    font-family: Hack, sans-serif;
+    font-size:25px;
+    width:500px;
+    display:block!important;
+}
+/* Work */
+
+.work-content {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+}
+
+.left, .right {
+    width:500px;
+}
+.right {
+    border: 1px solid white;
+    height:575px;
+    align-self:center;
+}
+.right .heading {
+    font-size:1.6rem;
+    margin-left:20px;
+    
+}
+.moved {
+    margin-left:15px;
+}
+.right ul {
+    margin-right:20px;
+    font-size:17px;
+}
+.overlay {
+    height:100%;
+    width:100%;
+    z-index:99;
+    position:fixed;
+    left:0;
+    top:0;
+    background-color: orange;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    font-family: Hack;
+
+}
+.right li {
+    margin-bottom:10px;
+}
+.right h3 {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+.position {
+    margin-left:20px;
+    margin-top:-15px;
+}
+.date {
+    margin-left:20px;
+    margin-top:10px;
+}
+.right h2 {
+    margin:0;
+}
+.left {
+    color: rgba(55, 65, 64, 1);
+    background-color:rgba(255,255,255, 0.85);
+
+}
+
+.left div {
+    margin:20px;
+}
+.left .programming-languages:nth-child(first) {
+    margin-right:20px;
+}
+.left h3 {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding:10px;
+}
+
+/* Contact */
+
+.contact-content {
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact-content form {
+    display:flex;
+    flex-direction: column;
+}
+
+form {
+    padding:20px;
+    
+}
+
+form input {
+    margin:20px;
+    margin-left:0;
+    padding:9px 16px;
+    text-decoration: none;
+}
+
+textarea {
+    min-height:300px;
+}

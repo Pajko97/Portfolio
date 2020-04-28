@@ -1,17 +1,15 @@
-<div class="contact">
-    <p class="header">If you want to work with me, hire me or just ask a random question hit me up :)</p>
-    <form id ="contactForm">
-        <input name="name" type="text" placeholder="Your name" id="name-field">
-        <input name="mail" type="text" placeholder="Your email" id="mail-field">
-        <textarea name="message" placeholder="Your message :)" id="message-field"></textarea>
-        <button id="submitForm" name="submit">Submit</button>
-      
+<div class="contact-content">
+    <form id="forms">
+        <div class="identification">
+            <placeholder for="email">Your email</placeholder>
+            <input type="email" name="email" />
+            <placeholder for="name">Your name</placeholder>
+            <input type="text" name="name" />
+        </div>
+        <textarea placeholder="Message" name="message" />
+        <button type="submit" name="submit" id="submit" value="Submit">Submit</button>
     </form>
-
-    <div class="sent">
-        <img name="img" height="128" width="128" src="../images/checkmark.svg"></img>
-        <label for="img">Your message was sent, thank you!</label>
-    </div>
 </div>
+<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css'>
 
-<script src="../js/main.js"></script>
+<script src="js/script.js"></script>
